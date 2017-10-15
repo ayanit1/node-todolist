@@ -1,5 +1,5 @@
 'use strict';
-module exports = (app) => {
+module.exports = (app) => {
   const todoList = require('../controllers/todoListController')
 
   // todoList Routes
