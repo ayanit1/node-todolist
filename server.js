@@ -13,6 +13,9 @@ mongoose.connect('mongodb://localhost/Tododb');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+ape.use((req,res) => {
+  res.status(404).send({url: req.originalUrl + ' not fonund'})
+});
 
 const routes = require('./api/routes/todoListRoutes'); //importing route
 routes(app); //register the route
