@@ -1,5 +1,5 @@
 'use strict';
-import mongoose from 'mongoose';
+const mongoose = require ('mongoose');
 const Schema = mongoose.Schema;
 
 const TaskSchema = new Schema ({
@@ -20,4 +20,4 @@ const TaskSchema = new Schema ({
   }
 });
 
-model.exports = mongoose.model('Tasks', TaskSchema);
+module.exports = mongoose.model('Tasks', TaskSchema);

@@ -1,5 +1,5 @@
 'use strict';
-import mongoose from 'mongoose';
+const mongoose = require ('mongoose');
 const Task = mongoose.model('Tasks');
 
 exports.list_all_tasks = (req, res) => {
